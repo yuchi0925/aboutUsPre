@@ -1,0 +1,75 @@
+doctype html
+html(lang='zh')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    // 清除所有預設樣式
+    link(rel='stylesheet' href='reset.css')
+    link(rel='stylesheet' href='style.css')
+    // <link rel="stylesheet" href="./css/bootstrap.min.css">
+    title About us
+
+  body
+    // 漸層區
+    .transform
+      #DiscWrapperId.disc-wrapper.clearfix
+        #shadowid.disc.shadow
+        img#discid.disc(src='./picture/disc.png')
+      //
+        <div id = "cancel-wrapper">
+        <img src ="./picture/cancel.png" id = "cancel" >
+        </div>
+    #cancel-wrapper
+      img#cancel.CursorChange(src='./picture/cancel.png')
+
+    // 人物區
+    section.info-background
+      .people-wrapper
+        img#people1.people.CursorChange(src='./picture/people1.png' alt='people1')
+        img#people2.people.CursorChange(src='./picture/people2.png' alt='people2')
+        img#people3.people.CursorChange(src='./picture/people3.png' alt='people3')
+        img#people4.people.CursorChange(src='./picture/people4.png' alt='people4')
+        img#people5.people.CursorChange(src='./picture/people5.png' alt='people5')
+        img#people6.people.CursorChange(src='./picture/people6.png' alt='people6')
+    #effect-picture-stack
+      .stackboy.stack1.transparent.original
+        img#people1-photo.boy1.photo(src='./picture/1/photo.png' alt='photo')
+        img#people1-name.boy1.name(src='./picture/1/name.png' alt='name')
+        img#people1-blank.boy1.blank(src='./picture/blank_wrapper.png' alt='blank')
+        img#people1-info1.boy1.info1(src='./picture/1/info1.png' alt='info1')
+        img#people1-info2.boy1.info2(src='./picture/1/info2.png' alt='info2')
+      .stackgirl.stack2.transparent.original
+        img#people2-photo.girl1.photo(src='./picture/2/photo.png' alt='photo')
+        img#people2-name.girl1.name(src='./picture/2/name.png' alt='name')
+        img#people2-blank.girl1.blank(src='./picture/blank_wrapper.png' alt='blank')
+        img#people2-info1.girl1.info1(src='./picture/2/info1.png' alt='info1')
+        img#people2-info2.girl1.info2(src='./picture/2/info2.png' alt='info2')
+      .stackboy.stack3.transparent.original
+        img#people3-photo.boy2.photo(src='./picture/3/photo.png' alt='photo')
+        img#people3-name.boy2.name(src='./picture/3/name.png' alt='name')
+        img#people3-blank.boy2.blank(src='./picture/blank_wrapper.png' alt='blank')
+        img#people3-info1.boy2.info1(src='./picture/3/info1.png' alt='info1' style='width:250px;height:106px;')
+        img#people3-info2.boy2.info2(src='./picture/3/info2.png' alt='info2' style='width:250px;height:54px;padding-top:35px;')
+      .stackgirl.stack4.transparent.original
+        img#people4-photo.girl2.photo(src='./picture/4/photo.png' alt='photo')
+        img#people4-name.girl2.name(src='./picture/4/name.png' alt='name')
+        img#people4-blank.girl2.blank(src='./picture/blank_wrapper.png' alt='blank')
+        img#people4-info1.girl2.info1(src='./picture/4/info1.png' alt='info1')
+        img#people4-info2.girl2.info2(src='./picture/4/info2.png' alt='info2')
+      .stackboy.stack5.transparent.original
+        img#people5-photo.boy3.photo(src='./picture/5/photo.png' alt='photo')
+        img#people5-name.boy3.name(src='./picture/5/name.png' alt='name')
+        img#people5-blank.boy3.blank(src='./picture/blank_wrapper.png' alt='blank')
+        img#people5-info1.boy3.info1(src='./picture/5/info1.png' alt='info1')
+        img#people5-info2.boy3.info2(src='./picture/5/info2.png' alt='info2')
+      .stackgirl.stack6.transparent.original
+        img#people6-photo.girl3.photo(src='./picture/6/photo.png' alt='photo')
+        img#people6-name.girl3.name(src='./picture/6/name.png' alt='name')
+        img#people6-blank.girl3.blank(src='./picture/blank_wrapper.png' alt='blank')
+        img#people6-info1.girl3.info1(src='./picture/6/info1.png' alt='info1')
+        img#people6-info2.girl3.info2(src='./picture/6/info2.png' alt='info2')
+        
+    // 最底下，不一定要
+    div
+    script(src='script.js')

@@ -1,0 +1,295 @@
+html
+  cursor: url("./picture/mouse_normal.png"), auto
+
+body
+  background-color: #FAE9E4
+  overflow: hidden
+
+/* 清除高度塌陷與外邊距重合
+
+.clearfix
+  &::before, &::after
+    content: ''
+    display: table
+    clear: both
+
+/* 設定上面漸層區的大小與顏色
+
+div.transform
+  width: 100vw
+  height: 45vh
+  background-image: linear-gradient(to right, rgb(170, 166, 175), rgb(224, 207, 202))
+
+  /* hidden使圓盤超出後隱藏
+  overflow: hidden
+
+.disc-wrapper
+  width: 50vw
+  margin: 0 auto
+  margin-top: -42vw
+  margin-bottom: 42vw
+  transition: all 2s
+
+div.transform
+  #discid
+    /* 1vw ~= 1.46111vh
+    /* 絕對定位使disc與陰影重合，方便後續移動
+    position: absolute
+    width: 50vw
+    height: 50vw
+
+    /* 比shadow的優先級小，使shadow的mouseenter事件可以觸發不被蓋住
+    z-index: 3
+
+    /* 設定過渡
+    transition: all 2s
+
+  .shadow
+    /* 類似disc
+    position: absolute
+    width: 50vw
+    height: 50vw
+    background-color: rgba(0, 0, 0, 0)
+
+    /* 陰影相關設定
+    border-radius: 50%
+    box-shadow: 1vw 1vh 2vw rgba(0, 0, 0, 0.6)
+    z-index: 4
+    transition: all 2s
+
+.rotate
+  animation: RoteDisc 3.6s linear infinite normal
+
+.CursorChange
+  cursor: url("./picture/mouse_active.png"), auto
+
+@keyframes RoteDisc
+  from
+
+  to
+    transform: rotateZ(-1turn)
+
+#cancel-wrapper
+  width: 5vw
+  height: 5vw
+  float: right
+  position: relative
+  margin-right: 10vw
+  margin-top: -16vw
+
+  /* opacity: 0.3;
+  visibility: hidden
+  z-index: 1
+
+  #cancel
+    width: 100%
+    height: 100%
+
+.info-background
+  width: 100vw
+  height: 45vh
+  background-color: #FAE9E4
+  border-bottom: #9b8b98 0.5vw solid
+
+  /* hidden使圓盤超出後隱藏
+  overflow: hidden
+
+.people-wrapper
+  /* padding-left: 1.8vw;
+  padding-top: 15vh
+  text-align: center
+
+  .people
+    display: inline-block
+    height: 30vh
+
+    /* width:10vw;
+    padding-left: 10px
+    padding-right: 10px
+    vertical-align: bottom
+
+.stack1, .stack2, .stack3, .stack4, .stack5, .stack6
+  position: relative
+
+.stackgirl img, .stackboy img
+  position: absolute
+  left: 0
+  top: 100px
+
+.stackgirl .photo, .stackboy .photo
+  height: 80vh
+  z-index: 999
+
+.stackgirl .name
+  height: 22vh
+  z-index: 998
+
+.stackboy
+  .name
+    height: 22vh
+    z-index: 998
+
+  .blank
+    height: 60vh
+    z-index: 996
+
+.stackgirl
+  .blank
+    height: 60vh
+    z-index: 996
+
+  .info1
+    height: 12vh
+    z-index: 997
+
+.stackboy .info1
+  height: 12vh
+  z-index: 997
+
+.stackgirl .info2, .stackboy .info2
+  height: 15vh
+  z-index: 997
+
+.girl_photo_change
+  animation: girl_photo_change 0.5s linear 1 forwards
+
+@keyframes girl_photo_change
+  from
+    opacity: 0
+    top: 0
+    left: 5vw
+
+  to
+    opacity: 1
+    top: -80vh
+    left: 5vw
+
+.boy_photo_change
+  animation: boy_photo_change 0.5s linear 1 forwards
+
+@keyframes boy_photo_change
+  from
+    opacity: 0
+    top: 0
+    left: 45vw
+
+  to
+    opacity: 1
+    top: -80vh
+    left: 45vw
+
+.girl_name_change
+  animation: girl_name_change 0.5s 0.5s linear 1 forwards
+
+@keyframes girl_name_change
+  from
+    opacity: 0
+    top: -15vh
+    left: 5vw
+
+  to
+    opacity: 1
+    top: -15vh
+    left: 45vw
+
+.boy_name_change
+  animation: boy_name_change 0.5s 0.5s linear 1 forwards
+
+@keyframes boy_name_change
+  from
+    opacity: 0
+    top: -15vh
+    left: 55vw
+
+  to
+    opacity: 1
+    top: -15vh
+    left: 5vw
+
+.girl_blank_change
+  animation: girl_blank_change 0.5s 1s linear 1 forwards
+
+@keyframes girl_blank_change
+  from
+    opacity: 0
+    top: -62vh
+    left: 5vw
+
+  to
+    opacity: 1
+    top: -62vh
+    left: 27vw
+
+.boy_blank_change
+  animation: boy_blank_change 0.5s 1s linear 1 forwards
+
+@keyframes boy_blank_change
+  from
+    opacity: 0
+    top: -62vh
+    left: 45vw
+
+  to
+    opacity: 1
+    top: -62vh
+    left: 10vw
+
+.girl_info1_change
+  animation: girl_info1_change 0.5s 1.5s linear 1 forwards
+
+@keyframes girl_info1_change
+  from
+    opacity: 0
+    top: -50vh
+    left: 5vw
+
+  to
+    opacity: 1
+    top: -50vh
+    left: 40vw
+
+.boy_info1_change
+  animation: boy_info1_change 0.5s 1.5s linear 1 forwards
+
+@keyframes boy_info1_change
+  from
+    opacity: 0
+    top: -50vh
+    left: 45vw
+
+  to
+    opacity: 1
+    top: -50vh
+    left: 19vw
+
+.girl_info2_change
+  animation: girl_info2_change 0.5s 2s linear 1 forwards
+
+@keyframes girl_info2_change
+  from
+    opacity: 0
+    top: -35vh
+    left: 5vw
+
+  to
+    opacity: 1
+    top: -35vh
+    left: 40vw
+
+.boy_info2_change
+  animation: boy_info2_change 0.5s 2s linear 1 forwards
+
+@keyframes boy_info2_change
+  from
+    opacity: 0
+    top: -35vh
+    left: 35vw
+
+  to
+    opacity: 1
+    top: -35vh
+    left: 19vw
+
+#effect-picture-stack
+  position: relative
+  z-index: 0
